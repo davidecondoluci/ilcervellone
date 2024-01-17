@@ -1,0 +1,409 @@
+/* RESET CSS */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* FONT */
+@font-face {
+  font-family: "Bold";
+  src: url("font/poppins-v20-latin-700.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Medium";
+  src: url("font/poppins-v20-latin-500.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Regular";
+  src: url("font/poppins-v20-latin-300.woff2") format("woff2");
+}
+
+body {
+  font-family: "Regular";
+  font-size: 16px;
+  line-height: 28px;
+  background-color: #fff;
+  color: #002c98;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  padding: 25px 25px;
+  background-color: #fff;
+}
+
+#links {
+  display: none;
+}
+#links a {
+  list-style: none;
+}
+#links a {
+  font-family: "Bold";
+  color: #002c98;
+  padding: 15px 15px;
+  text-decoration: none;
+  display: block;
+  text-transform: uppercase;
+}
+.icon {
+  display: block;
+  position: absolute;
+  color: #002c98;
+  top: 55px;
+  right: 50px;
+}
+.icon:hover {
+  color: #ff19ff;
+}
+#links a:hover {
+  color: #ff19ff;
+  background-color: #fafafa;
+}
+
+h2 {
+  font-family: "Bold";
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 38px;
+  color: #7c005f;
+  text-align: center;
+  padding-bottom: 25px;
+}
+h3 {
+  font-family: "Medium";
+  font-size: 24px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+span {
+  font-family: "Medium";
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+.about,
+.where,
+.how,
+.format,
+.app,
+.quiz {
+  padding: 50px 0;
+}
+.contact {
+  padding: 50px 0 100px 0;
+}
+
+aside {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about {
+  text-align: center;
+}
+.about p {
+  text-align: left;
+  padding-bottom: 25px;
+}
+
+.where {
+  text-align: center;
+}
+.where img {
+  width: 400px;
+  height: auto;
+}
+.stats {
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align: center;
+  justify-content: space-around;
+  padding-bottom: 25px;
+}
+.stats div {
+  padding: 15px 0;
+}
+.stats span {
+  font-size: 48px;
+}
+
+.rules {
+  display: grid;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: center;
+}
+.rules div {
+  width: 100%;
+  height: auto;
+  padding: 25px;
+  margin: 15px 0;
+  border: 2px solid #002c98;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.rules span {
+  font-size: 36px;
+  background-color: #ffff01;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rules h3 {
+  padding-top: 15px;
+}
+
+.format div {
+  gap: 25px;
+  text-align: center;
+}
+.format div img {
+  width: 500px;
+}
+
+.app {
+  text-align: center;
+}
+.app div p {
+  padding-top: 15px;
+}
+.iphone {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 25px;
+}
+.iphone img {
+  max-width: 30%;
+  height: auto;
+}
+.badge {
+  padding-top: 25px;
+}
+.badge img {
+  width: auto;
+  max-height: 50px;
+}
+.badge img:hover {
+  opacity: 0.75;
+}
+
+.quiz .box div {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 15px;
+  gap: 15px;
+}
+.quiz .box div img {
+  max-width: 50%;
+  height: auto;
+}
+.quiz p {
+  padding-bottom: 15px;
+}
+
+/* inizio form */
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #1f1f1f;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  resize: vertical;
+}
+select {
+  cursor: pointer;
+}
+input[type="submit"] {
+  background-color: #7c005f;
+  color: #fff;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #ff19ff;
+}
+
+.container {
+  color: #1f1f1f;
+}
+/* fine form */
+
+footer {
+  background-color: #1f1f1f;
+  color: #fff;
+  text-align: center;
+  padding: 25px;
+}
+footer div {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 15px;
+}
+footer div i {
+  font-size: 36px;
+  color: #fff;
+  cursor: pointer;
+}
+footer div i:hover {
+  opacity: 0.75;
+}
+
+/* Media Query */
+@media (min-width: 768px) {
+  main {
+    padding: 0 200px;
+  }
+
+  .about,
+  .where,
+  .how,
+  .format,
+  .app,
+  .quiz {
+    padding: 75px 0;
+  }
+  .contact {
+    padding: 75px 0 75px 0;
+  }
+
+  h2 {
+    font-size: 48px;
+    padding-bottom: 50px;
+  }
+  h3 {
+    font-size: 36px;
+    line-height: 38px;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #links {
+    display: flex;
+    align-items: baseline;
+  }
+  #links ul {
+    display: flex;
+  }
+  #links a:hover {
+    background-color: #fff;
+  }
+  .icon {
+    display: none;
+  }
+
+  .about .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .about p {
+    max-width: 500px;
+  }
+  .content div img {
+    width: 500px;
+  }
+
+  .where .stats {
+    gap: 15px;
+  }
+  .stats {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+  .stats span {
+    font-size: 60px;
+  }
+  .where img {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .how .rules {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  .how .rules div {
+    height: 400px;
+  }
+  .how .rules span.material-symbols-rounded {
+    font-size: 48px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .format div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    text-align: center;
+  }
+
+  .iphone {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding-bottom: 50px;
+  }
+  .iphone img {
+    max-width: 25%;
+    height: auto;
+  }
+
+  .quiz .box div {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 15px;
+    gap: 15px;
+  }
+
+  .contact .container {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
